@@ -10,9 +10,21 @@ jobs:
     subgraphs: []
 locations:
   FESRC:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "10":
+        database: SNOWFLAKE_SAMPLE_DATA
+        schema: TPCH_SF1
+      "11":
+        database: SNOWFLAKE_SAMPLE_DATA
+        schema: TPCH_SF1
   FETGT:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "10":
+        database: FEDB
+        schema: FETEST
+      "11":
+        database: FEDB
+        schema: FEPROD
 macros: {}
 packages: {}
 projects: {}
