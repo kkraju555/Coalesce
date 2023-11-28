@@ -1,0 +1,78 @@
+steps:
+  NATION-132a5262-2ce5-453e-bbb7-674a8fcec9ba:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: Nation data as defined by TPC-H
+      locationName: FESRC
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c10fbf17-8ab7-4fa7-ae54-52546cc477d4
+              stepCounter: 132a5262-2ce5-453e-bbb7-674a8fcec9ba
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: N_NATIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: eca83ff0-59fd-4f64-88fa-9e2d6f5bc15c
+              stepCounter: 132a5262-2ce5-453e-bbb7-674a8fcec9ba
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: N_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 25d3e63d-246d-42ad-a4fc-ac943cb63a64
+              stepCounter: 132a5262-2ce5-453e-bbb7-674a8fcec9ba
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: N_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3e0607a4-63b7-403c-a8b9-b84fffd4eaf8
+              stepCounter: 132a5262-2ce5-453e-bbb7-674a8fcec9ba
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: N_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('FESRC', 'NATION') }}
+      name: NATION
+      schema: ""
+      sqlType: Source
+      table: NATION
+      type: sourceInput
+    stepCounter: 132a5262-2ce5-453e-bbb7-674a8fcec9ba
